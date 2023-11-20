@@ -1,0 +1,56 @@
+@font-face {
+	font-family: "Pretendard";
+	font-weight: 300;
+	src: url("/fonts/PretendardVariable.woff2");
+}
+
+@font-face {
+	font-family: "JetBrainsMono";
+	font-weight: 300;
+	src: url("/fonts/JetBrainsMono-Regular.woff2");
+}
+
+@font-face {
+	font-family: "NotoColorEmoji";
+	font-weight: 300;
+	src: url("/fonts/NotoColorEmoji-Regular.ttf");
+}
+
+html, body {
+    --font-color: #000000;
+
+    margin: 0 0;
+    padding: 0 0;
+
+    width: 100%;
+    height: 100%;
+
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+        "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    width: 40%;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+}
+
+#created {
+    padding-left: 30px;
+}
