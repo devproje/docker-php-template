@@ -49,6 +49,8 @@ services:
         echo "security.limit_extensions = .php .phtml .php3 .php4 .php5 .html .htm" >> /usr/local/etc/php-fpm.d/www.conf
         php-fpm
     restart: always
+    depends_on:
+      - maraidb
   pma:
     container_name: pma
     image: phpmyadmin:latest
