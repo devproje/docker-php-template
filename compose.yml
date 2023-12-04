@@ -31,7 +31,10 @@ services:
     restart: always
   php:
     container_name: php
-    image: php:8.2-fpm-alpine3.17
+    image: "custom-php"
+    build:
+      dockerfile: ./Dockerfile
+      context: .
     expose:
       - 9000
     networks:
